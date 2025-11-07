@@ -99,13 +99,5 @@ Per info e tips:
 ***
 
 Questa versione di README ti guida passo passo dall’installazione, sviluppo, compilazione, flashing fino a test e spiega l’architettura Python per gestire robot EV3 in modo modulare e estendibile.
-<span style="display:none">[^1][^2][^3]</span>
 
-<div align="center">⁂</div>
-
-[^1]: README.md
-
-[^2]: EV3DEV_Body.py
-
-[^3]: EV3DEV_Controller.py
 
