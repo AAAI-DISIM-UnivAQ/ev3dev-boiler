@@ -9,7 +9,7 @@ Ambiente Docker per sviluppo e build di applicazioni LEGO Mindstorms EV3 con EV3
 `sudo apt-get install qemu-user-static`
 - Brickstrap installato nel container (già incluso nel Dockerfile)
 - MicroSD almeno 2GB e programma per flash (es. balenaEtcher)
-- File d’esempio C (`hello.c`), script di build/flash (`build_flash.sh`) già inclusi nel progetto
+- File d’esempio python (`main.py`), script di build/flash (`build_flash.sh`) già inclusi nel progetto
 
 
 ## Build immagine Docker
@@ -29,15 +29,14 @@ Esegui il container con la cartella corrente montata:
 docker run --rm -it -v $PWD:/src ev3dev-env
 ```
 
-Verifica di vedere `/src/hello.c` e `build_flash.sh` dentro il container.
+Verifica di vedere `/src/main.py` e `build_flash.sh` dentro il container.
 
 ## Compile \& test esempio base
 
-Compila il file di esempio C in ARM:
+Compila il file di esempio python in ARM:
 
 ```sh
-arm-linux-gnueabi-gcc -o hello hello.c
-./hello   # se vuoi testare in locale con QEMU
+python src/main.py
 ```
 
 
@@ -78,13 +77,13 @@ sudo dd if=ev3dev.img of=/dev/sdX bs=4M conv=fsync status=progress
 Copia `hello` tramite SSH/SCP nel brick:
 
 ```sh
-ssh robot@ev3dev.local 'cd /home/robot; ./hello'
+ssh robot@ev3dev.local 'cd /home/robot; python main.py'
 ```
 
 Dovresti vedere sul display o nella console:
 
 ```
-Hello from EV3DEV!
+red
 ```
 
 
@@ -116,7 +115,6 @@ Per info e tips:
 ***
 
 Questa versione di README ti guida passo passo dall’installazione, sviluppo, compilazione, flashing fino a test e spiega l’architettura Python per gestire robot EV3 in modo modulare e estendibile.
-Se vuoi posso fornirti anche esempi di codice più estesi per questi moduli Python.
 <span style="display:none">[^1][^2][^3]</span>
 
 <div align="center">⁂</div>
