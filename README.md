@@ -71,22 +71,6 @@ sudo dd if=ev3dev.img of=/dev/sdX bs=4M conv=fsync status=progress
 - Inserisci la microSD nel brick
 - Accendi l’EV3, dovrebbe partire EV3DEV Linux
 
-
-## Test esempio sul brick
-
-Copia `hello` tramite SSH/SCP nel brick:
-
-```sh
-ssh robot@ev3dev.local 'cd /home/robot; python main.py'
-```
-
-Dovresti vedere sul display o nella console:
-
-```
-red
-```
-
-
 ## Documentazione su EV3DEV_Body.py e EV3DEV_Controller.py
 
 Questi due file Python rappresentano una struttura modulare per semplificare il controllo del brick LEGO EV3 con EV3DEV usando il pacchetto `ev3dev2`.
