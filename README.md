@@ -1,11 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# si e vorrei anche che aggiungessi una breve documentazione sui file ev3dev_body e ev3dev_controller
-
-Ecco la versione aggiornata e completata del file README.md con un titolo accattivante e una breve documentazione sui file EV3DEV_Body.py e EV3DEV_Controller.py, che descrive il loro scopo e funzionalità:
-
-***
-
 # EV3DEV Docker Studio: Ambiente Completo per Sviluppo, Emulazione e Flashing LEGO Mindstorms EV3
 
 Ambiente Docker per sviluppo e build di applicazioni LEGO Mindstorms EV3 con EV3DEV, emulazione ARM e flusso automatico per creare immagini microSD flashabili.
